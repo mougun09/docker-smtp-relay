@@ -8,10 +8,10 @@ services:
     dns_search: 8sec.local
     environment:
       TZ: Asia/Hong_Kong
-      RELAY_MYHOSTNAME: smtp1.8sec.local
-      RELAY_MYDOMAIN: 8sec.local
-      RELAY_MYNETWORKS: '10.122.80.0/24'
-      RELAY_HOST: '[email-smtp.ap-southeast-1.amazonaws.com]:587'
+      RELAY_MYHOSTNAME: smtp-relay.local
+      RELAY_MYDOMAIN: domain.com
+      RELAY_MYNETWORKS: '127.0.0.0/8 172.16.0.0/12'
+      RELAY_HOST: '[maildev.local]:25'
       POSTCONF_compatibility_level: '2'
     ports:
       - 25:25/tcp
