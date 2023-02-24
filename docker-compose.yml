@@ -8,7 +8,6 @@ services:
     dns_search: 8sec.local
     environment:
       TZ: Asia/Hong_Kong
-      RELAY_POSTMASTER: postmaster@domain.com
       RELAY_MYHOSTNAME: smtp1.8sec.local
       RELAY_MYDOMAIN: 8sec.local
       RELAY_MYNETWORKS: '10.122.80.0/24'
